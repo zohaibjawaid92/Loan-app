@@ -1,0 +1,22 @@
+.signup-logo {
+  padding: 20px 0;
+  min-height: 200px;
+  text-align: center;
+}
+
+.signup-logo img {
+  max-width: 150px;
+}
+
+.list {
+  margin-bottom: 0;
+}
+.label-color >ion-item>ion-label{
+  --color:#472c8a;;
+}
+.btn-color>ion-button{
+  --background:#472c8a;
+  --background-activated:#9260f4;
+  
+}
+

@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button style="color:white ;"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title style="background-color: #472c8a;color: white;">Payaza Fast </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid style="margin-top:35px;" n>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-title style="font-weight: bold; margin:20px;color:#472c8a;"
+            >Education & Employment</ion-card-title
+          >
+          <ion-row style="margin-top:20px;">
+            <ion-col>
+              <ion-item class="color-content">
+                <ion-label>Level of Education</ion-label>
+                <ion-select value="nigeria" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option value="nigeria">Phd</ion-select-option>
+                  <ion-select-option value="pak">Masters</ion-select-option>
+                  <ion-select-option value="aus">Degree</ion-select-option>
+                  <ion-select-option value="china"
+                    >OND/HND/NCE/O-Level</ion-select-option
+                  >
+                  <ion-select-option value="no">No Education</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row style="margin-top:20px;">
+            <ion-col>
+              <ion-item class="color-content" >
+                <ion-label>Employment Status</ion-label>
+                <ion-select value="nigeria" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option value="nigeria"
+                    >Employed</ion-select-option
+                  >
+                  <ion-select-option value="pak">Unemployed</ion-select-option>
+                  <ion-select-option value="aus"
+                    >Own Business</ion-select-option
+                  >
+                </ion-select>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row style="margin-top:20px;">
+            <ion-col>
+              <ion-item class="color-content">
+                <ion-label position="floating"
+                  >When you started working there?</ion-label
+                >
+                <ion-input></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row style="margin-top:20px;">
+            <ion-col>
+              <ion-item class="color-content">
+                <ion-label position="floating">Monthly Income</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row style="margin-top:15px;">
+      <ion-col>
+        <ion-button class="btn-color" expand="block" (click)="personal_information()"
+          >Next</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

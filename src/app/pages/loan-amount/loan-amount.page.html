@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button style="color:white ;"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title style="background-color: #472c8a;color: white;">Payaza Fast </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid style="margin-top:40px;">
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-title
+            style="font-weight: bold; margin:20px;text-align: center;color:#472c8a;"
+            >Loan - $1000</ion-card-title
+          >
+          <ion-row style="margin-top:20px;">
+            <ion-col>
+              <ion-card-title
+                style="font-weight: bold; margin:20px;text-align: center;color:#472c8a;"
+                >Interest Fees - $300</ion-card-title
+              >
+            </ion-col>
+          </ion-row>
+          <ion-row style="margin-top:20px;">
+            <ion-col>
+              <ion-card-title
+                style="font-weight: bold; margin:20px;text-align: center;color:#472c8a;"
+                >Total - $1300</ion-card-title
+              >
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row style="margin-top:20px;">
+      <ion-col>
+        <ion-list >
+          <ion-radio-group>
+            <ion-item >
+              <ion-label style="color:#472c8a ;"
+                >By Clicking you have accept with <br />
+                the terms & conditions</ion-label
+              >
+              <ion-radio slot="start"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row style="margin-top:20px;">
+      <ion-col>
+        <ion-button class="btn-color" (click)="loan_submit()" expand="block">Submit</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

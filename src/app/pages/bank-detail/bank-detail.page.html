@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button style="color:white ;"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title style="background-color: #472c8a;color: white;">Payaza Fast </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid style="margin-top:40px;">
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-title style="font-weight: bold; margin:20px;color:#472c8a;"
+            >Bank Details</ion-card-title
+          >
+          <ion-row style="margin-top:20px;">
+            <ion-col>
+              <ion-item class="color-content">
+                <ion-label position="floating"
+                  >Bank Verification Number (BVN)</ion-label
+                >
+                <ion-input></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row style="margin-top:20px;">
+            <ion-col>
+              <ion-item class="color-content">
+                <ion-label>Bank Name</ion-label>
+                <ion-select value="nigeria" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option value="nigeria">UBL</ion-select-option>
+                  <ion-select-option value="pak">HBL</ion-select-option>
+                  <ion-select-option value="aus">ABL</ion-select-option>
+                  <ion-select-option value="china">HMB</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row style="margin-top:20px;">
+            <ion-col>
+              <ion-item class="color-content">
+                <ion-label position="floating">Account Number</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row style="margin-top:20px;">
+      <ion-col>
+        <ion-button class="btn-color" expand="block" (click)="education_employment()"
+          >Next</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

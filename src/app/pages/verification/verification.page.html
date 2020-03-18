@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button style="color:white ;"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title style="background-color: #472c8a;color: white;" >Payaza Fast </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-grid style="margin-top: 20px;">
+  <ion-row>
+    <ion-col>
+      <ion-card>
+        <p  style="font-size:25px;padding:10px;text-align:center;font-weight: bold;color:#472c8a;">Verify Your Phone Number</p>
+        <ion-row>
+          <ion-col>
+            <ion-label 
+        ><h2 style="text-align: center; font-size: 20px;color:#472c8a;">
+          <strong>Click to get the OTP</strong>
+        </h2></ion-label
+      >
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-item style="text-align: center;">
+              <ion-input placeholder="C*347010H"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-label
+            ><h2 style="text-align: center;font-size: 20px;margin-top: 20px;color:#472c8a;">
+              <strong>Or Enter the OTP from SMS</strong>
+            </h2></ion-label
+          >
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-item style="text-align: center;">
+              <ion-input placeholder="1"></ion-input>
+              <ion-input placeholder="2"></ion-input>
+              <ion-input placeholder="3"></ion-input>
+              <ion-input placeholder="4"></ion-input>
+              <ion-input placeholder="5"></ion-input>
+              <ion-input placeholder="6"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>     <ion-item style="text-align: center;margin-top: 10px;">
+            <ion-label style="color:#472c8a;">Retry in 2 mins</ion-label>
+          </ion-item></ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button class="btn-color" style="margin-top: 10px;" (click)="dashboard()" expand="block"
+        >Next</ion-button
+      >
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+  
+</ion-content>
+

@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons  slot="start">
+      <ion-menu-button style="color:white ;">  </ion-menu-button>
+    </ion-buttons>
+
+    <ion-title style="background-color: #472c8a;color: white;">Payaza Fast</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card  >
+          <ion-card-title class="color-content">
+           <p style="font-size:25px;padding:10px;text-align:center"> Your Location</p>
+          </ion-card-title>
+          <ion-row>
+            <ion-col>
+              <ion-item class="color-content">
+                <ion-label>Select Country</ion-label>
+                <ion-select value="nigeria" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option value="nigeria">Nigeria</ion-select-option>
+                  <ion-select-option value="pak">Pakistan</ion-select-option>
+                  <ion-select-option value="aus">Australia</ion-select-option>
+                  <ion-select-option value="china">China</ion-select-option>
+                </ion-select>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-item class="color-content">
+                <ion-label position="floating">Phone Number</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-label color="primary"
+        ><p style="padding: 16px;  font-size: 18px;text-align: center;color:#472c8a;">
+          You will get an sms with one time access code
+        </p></ion-label
+      >
+            </ion-col>
+          </ion-row>
+          <ion-row style="padding:16px;font-size:14px;">
+            <ion-col>
+              <ion-list >
+                <ion-radio-group >
+                  <ion-item class="color-content">
+                    <ion-label>Send the code also with <br/>whatsapp</ion-label>
+                    <ion-radio slot="start" value="biff"></ion-radio>
+                  </ion-item>
+                </ion-radio-group>
+              </ion-list>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button class="btn-color" (click)="verification()" expand="block">Next</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-label 
+        ><p style="text-align: center;color:#472c8a;">
+          By clicking next you accept the Term and Conditions
+        </p></ion-label
+      >
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+ 
+</ion-content>

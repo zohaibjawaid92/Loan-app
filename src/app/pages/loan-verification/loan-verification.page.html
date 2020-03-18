@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button style="color:white ;" ></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title style="background-color: #472c8a;color: white;">Payaza Fast</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row >
+      <ion-col>
+        <ion-card>
+          <ion-card-title style="text-align: center;font-size: 25px;padding: 16px;color:#472c8a;"
+            >Verification Fees 100$</ion-card-title
+          >
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row >
+      <ion-col>
+        <ion-card>
+          <ion-card-title
+            style="text-align: center;font-size: 25px;margin-top: 5px;padding: 16px;color:#472c8a;"
+            >Enter Your Card Details to Pass</ion-card-title
+          >
+          <ion-item style="color:#472c8a;">
+            <ion-label  position="floating">Card Number</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+          <ion-row style="margin-top: 25px;">
+            <ion-col>
+              <ion-item style="color:#472c8a;">
+                <ion-label position="floating">Card Expiry</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col>
+              <ion-item style="color:#472c8a;">
+                <ion-label position="floating">CVV</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row style="margin-top: 25px;">
+            <ion-col>
+              <ion-item style="color:#472c8a;">
+                <ion-label position="floating">Pay NAN 100</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button class="btn-color" expand="block" (click)="bank_detail()">Submit</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

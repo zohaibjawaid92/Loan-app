@@ -1,0 +1,73 @@
+
+<ion-header  >
+  <ion-toolbar  >
+    
+    <ion-title  style="background-color: #472c8a;color: white;"> Signup</ion-title >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="signup-logo">
+    <img style="border-radius: 50px;" src="assets/img/payza.jpg" alt="Ionic logo">
+  </div> 
+
+  <form #signupForm="ngForm" novalidate>
+    <ion-list  class="label-color" lines="none">
+  <!--    <ion-item>
+        <ion-label position="stacked" color="primary">Username</ion-label>
+        <ion-input [(ngModel)]="signup.username" name="username" type="text" #username="ngModel" required>
+        </ion-input>
+      </ion-item>
+      <ion-text color="danger">
+        <p [hidden]="username.valid || submitted == false" class="ion-padding-start">
+          Username is required
+        </p>
+      </ion-text>
+
+      <ion-item>
+        <ion-label position="stacked" color="primary">Password</ion-label>
+        <ion-input [(ngModel)]="signup.password" name="password" type="password" #password="ngModel" required>
+        </ion-input>
+      </ion-item>
+      <ion-text color="danger">
+        <p [hidden]="password.valid || submitted == false" class="ion-padding-start">
+          Password is required
+        </p>
+      </ion-text>  -->
+      <ion-item>
+        <ion-label position="floating">First Name</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="" position="floating">Last Name</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="" position="floating">Email</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="" position="floating">Phone No</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="" position="floating">Password</ion-label>
+        <ion-input name="password" type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="" position="floating">Confirm Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <div style="margin-top: 20px;" class="ion-padding btn-color">
+      <ion-button (click)="onSignup(signupForm)" type="submit" expand="block">Sign Up</ion-button>
+
+      <ion-button style="margin-top: 18px;" (click)="login()"  expand="block">Already have an account?</ion-button>
+      
+    </div>
+    
+  </form>
+
+</ion-content>

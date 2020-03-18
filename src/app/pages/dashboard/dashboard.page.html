@@ -1,0 +1,194 @@
+<ion-header>
+  <ion-toolbar class="title">
+    <ion-buttons slot="start">
+      <ion-menu-button  style="color:black;"></ion-menu-button>
+    </ion-buttons>
+    <ion-title > Dashboard </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main-heading">
+      APPLY FOR A LOAN
+    </div>
+    <ion-grid no-padding>
+     <ion-row>
+      <ion-col size="6">
+      <div class="icons">
+      <p><ion-icon class="icon-inner" name="albums-outline"></ion-icon></p>
+            </div>
+            <div class="icon-para">
+              <p>Buy Air Time</p>
+            </div>
+      </ion-col>
+      <ion-col size="6">
+            <div class="icons">
+            <p><ion-icon class="icon-inner" name="cash-outline"></ion-icon></p>
+                  </div>
+                  <div class="icon-para">
+                    <p>Bill
+                      Payments</p>
+                  </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="icons">
+        <p><ion-icon class="icon-inner" name="clipboard-outline"></ion-icon></p>
+              </div>
+              <div class="icon-para">
+                <p>Fund Wallet</p>
+              </div>
+      </ion-col>
+      <ion-col size="6">
+              <div  class="icons">
+              <p><ion-icon  class="icon-inner" name="card-outline"></ion-icon></p>
+                    </div>
+                    <div class="icon-para">
+                      <p>Send Money</p>
+                    </div>
+      </ion-col>       
+      </ion-row>
+      <ion-row>    
+      </ion-row>      
+    </ion-grid>
+  <ion-grid>
+    <ion-row>
+        <!-- <ion-item>
+          <ion-label style="color: #472c8a;">My Wallet</ion-label>
+        </ion-item> -->
+        <!-- <div>My Wallet</div> -->
+        <ion-col class="wallet-outer">
+          <!-- <div>My Wallet</div> -->
+          <div class="wallet-div">
+            <div class="balance-div">
+              <div style="font-size: 14px;">BALANCE</div>
+              <div style="color : #8374e8;"><span style="font-weight: 800;">$</span>50,000</div>
+            </div>
+            <div class="balance-div">
+              <div>BONUS</div>
+              <div style="color : #8374e8;"><span style="font-weight: 800;">$</span>50,000</div>
+            </div>
+          </div>
+
+          <!-- <ion-item>
+            <ion-textarea
+              placeholder="Enter more information here..."
+            ></ion-textarea>
+          </ion-item> -->
+        </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div class="wallet-info">
+          <div style="color: #4621a4;font-size: 18px;">Make Payment</div>
+          <div style="color: #4621a4;font-size: 18px;">Transaction</div>
+        </div>
+        <div style="border-bottom: 1px solid #cccc;margin-top: 5px;"></div>
+        <!-- <ion-item>
+          <ion-label style="color: #472c8a;">Make Payment</ion-label>
+        </ion-item> -->
+      </ion-col>
+    </ion-row>
+  </ion-grid>  
+
+
+  <!-- <div class="container" style="margin-bottom:20px;"> -->
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+    <div class="icons">
+    <p><ion-icon class="icon-inner" name="albums-outline"></ion-icon></p>
+          </div>
+          <div class="icon-para">
+            <p>Mobile Data</p>
+          </div>
+        </ion-col>
+        <ion-col size="6">
+          <div class="icons">
+          <p><ion-icon class="icon-inner" name="cash-outline"></ion-icon></p>
+                </div>
+                <div class="icon-para">
+                  <p>Cable TV</p>
+                </div>
+        </ion-col>
+        <ion-col size="6">
+          <div class="icons">
+          <p><ion-icon  class="icon-inner" name="clipboard-outline"></ion-icon></p>
+                </div>
+                <div class="icon-para">
+                  <p>Utilities</p>
+                </div>
+        </ion-col>
+        <ion-col size="6">
+                <div class="icons">
+                <p><ion-icon class="icon-inner" name="card-outline"></ion-icon></p>
+                      </div>
+                      <div class="icon-para">
+                        <p>Betting & Lottery</p>
+                      </div>
+        </ion-col>
+        <ion-col size="6">
+          <div class="icons">
+          <p><ion-icon class="icon-inner" name="subway-outline"></ion-icon></p>
+                </div>
+                <div class="icon-para">
+                  <p>Transport</p>
+                </div>
+        </ion-col>
+        <ion-col size="6">
+                <div class="icons">
+                <p><ion-icon class="icon-inner" name="barcode-outline"></ion-icon></p>
+                      </div>
+                      <div class="icon-para">
+                        <p>Online Store</p>
+                      </div>
+        </ion-col> 
+        <ion-col size="6">
+          <div class="icons">
+          <p><ion-icon class="icon-inner" name="wifi-outline"></ion-icon></p>
+                </div>
+                <div class="icon-para">
+                  <p>Internet</p>
+                </div>
+        </ion-col>
+        <ion-col size="6">
+                <div class="icons">
+                <p><ion-icon class="icon-inner" name="beer-outline"></ion-icon></p>
+                      </div>
+                      <div class="icon-para">
+                        <p>Western Union</p>
+                      </div>
+        </ion-col>  
+        </ion-row>
+
+        </ion-grid>
+  <!-- </div> -->
+
+
+</ion-content>
+
+<!--
+<ion-tabs >
+  <ion-tab-bar class="color-content" slot="bottom">
+    <ion-tab-button tab="schedule">
+      <ion-icon name="calendar"></ion-icon>
+      <ion-label>Schedule</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="speakers">
+      <ion-icon name="people"></ion-icon>
+      <ion-label>Speakers</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="loan()">
+      <ion-icon name="logo-usd"></ion-icon>
+      <ion-label>Loan</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="about">
+      <ion-icon name="information-circle"></ion-icon>
+      <ion-label>About</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+-->
